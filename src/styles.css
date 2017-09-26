@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+.copyright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-5%, -50%);
+}
+
+.title {
+  text-align: center;
+  color: #333;
+}

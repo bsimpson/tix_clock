@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div class="hours-first">
+    <div class="box hours" ngClass="{{hour ? 'on' : 'off' }}" *ngFor="let hour of hoursFirst"></div>
+  </div>
+  <div class="hours-second">
+    <div class="box hours" ngClass="{{hour ? 'on' : 'off' }}" *ngFor="let hour of hoursSecond"></div>
+  </div>
+
+  <div class="minutes-first">
+    <div class="box minutes" ngClass="{{minute ? 'on' : 'off' }}" *ngFor="let minute of minutesFirst"></div>
+  </div>
+  <div class="minutes-second">
+    <div class="box minutes" ngClass="{{minute ? 'on' : 'off' }}" *ngFor="let minute of minutesSecond"></div>
+  </div>
+
+  <div class="seconds-first">
+    <div class="box seconds" ngClass="{{second ? 'on' : 'off' }}" *ngFor="let second of secondsFirst"></div>
+  </div>
+  <div class="seconds-second">
+    <div class="box seconds" ngClass="{{second ? 'on' : 'off' }}" *ngFor="let second of secondsSecond"></div>
+  </div>
+</div>
+
+<input [(ngModel)]="time" (click)="calculateGrid()" id="time" type="hidden" />

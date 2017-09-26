@@ -1,0 +1,52 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 3fr 2fr 3fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 3rem;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hours-first {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.minutes-first, .seconds-first {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.hours-second, .minutes-second, .seconds-second {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+}
+
+.box {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+}
+
+.hours-first .on, .hours-second .on {
+  background-color: red;
+}
+
+.minutes-first .on, .minutes-second .on {
+  background-color: blue;
+}
+
+.seconds-first .on, .seconds-second .on {
+  background-color: green;
+}
